@@ -1,0 +1,30 @@
+{
+  "name": "exos-citations",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "type": "module",
+"scripts": {
+  "start": "npm run build & node index",
+  "dev": "npm run build & nodemon index",
+  "dev-front": "parcel src/index.html --dist-dir dist",
+  "build": "npm run clear & parcel build src/index.html --dist-dir dist --no-source-maps --no-content-hash",
+  "clear": "rm -rf .parcel-cache"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "reset-css": "^5.0.2",
+    "sass": "^1.85.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "nodemon": "^3.1.9",
+    "parcel": "^2.13.3",
+    "parcel-namer-hashless": "^1.0.7"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon CV - Developpeur Web</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" defer src="../index.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="menu">
+      <a class="menu-logo" href="/">Qui suis-je ?</a>
+      <nav class="menu-list">
+        <a class="menu-item menu-item--current" href="/">🏠 Page d'accueil</a>
+        <a class="menu-item" href="/pages/1">👤 Fiche d'identité</a>
+        <a class="menu-item" href="/pages/2">🔎 À propos</a>
+        <a class="menu-item" href="/pages/3">🎓 Diplômes et Formations</a>
+        <a class="menu-item" href="/pages/4">💼 Expériences professionnelles</a>
+        <a class="menu-item" href="/pages/5">🌍 Langues</a>
+        <a class="menu-item" href="/pages/6">⚽ Centres d'intérêt</a>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="content-box">
+        <h1 class="content-title"><%= section.title %></h1>
+        <span><%- section.object %></span>
+        <div class="secret-reveal">
+          <button class="content-btn" id="secret-btn">Révéler l'information secrète</button>
+          <span class="content-secret" id="secret"><%= section.secret %></span>
+        </div>
+        <footer class="content-action">
+          <a class="btn" href="/pages/<%= section.id + 1 %>">Mais encore... ?</a>
+        </footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon CV - Developpeur Web</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" defer src="../index.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="menu">
+      <a class="menu-logo" href="/">Qui suis-je ?</a>
+      <nav class="menu-list">
+        <a class="menu-item menu-item--current" href="/">🏠 Page d'accueil</a>
+        <a class="menu-item" href="/pages/1_fiche_d'identité.html">👤 Fiche d'identité</a>
+        <a class="menu-item" href="/pages/2_a_propos.html">🔎 À propos</a>
+        <a class="menu-item" href="/pages/3_diplômes_et_formations.html">🎓 Diplômes et Formations</a>
+        <a class="menu-item" href="/pages/4_expériences_professionnelles.html">💼 Expériences professionnelles</a>
+        <a class="menu-item" href="/pages/5_langues.html">🌍 Langues</a>
+        <a class="menu-item" href="/pages/6_centres_d'intérêt.html">⚽ Centres d'intérêt</a>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="content-box">
+        <h1 class="content-title">Fiche d'identité</h1>
+            <p>Kevin Coelho</p>
+            <p>Jouy-le-Moutier (95280)</p>
+            <p>coelhokev@ymail.com</p>
+            <p>06 03 23 38 61</p>
+            <p>Né le 11/08/1990</p>
+            <p>Permis de conduire</p>
+            <p>Véhicule personnel</p>
+        <div class="secret-reveal">
+          <button class="content-btn" id="secret-btn">Révéler l'information secrète</button>
+          <span class="content-secret" id="secret"><%= secrets. %></span>
+        </div>
+        <footer class="content-action">
+          <a class="btn" href="/pages/2_a_propos.html">Mais encore... ?</a>
+        </footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
