@@ -1,6 +1,6 @@
 L'idée derriere ce projet était de créer un site sur plusieurs pages afin de rendre mon CV dynamique.
 
-- Creation d'une page par theme format - HTML
+- Creation d'une page par theme - HTML
 - Interaction entre les pages via des bouton - JS
 
 
