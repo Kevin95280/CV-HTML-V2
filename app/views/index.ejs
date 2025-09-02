@@ -35,7 +35,11 @@
           <span class="content-secret" id="secret"><%= section.secret %></span>
         </div>
         <footer class="content-action">
-          <a class="btn" href="/pages/<%= section.id + 1 %>">Mais encore... ?</a>
+          <% if (section.id < 6) { %>
+            <a class="btn" href="/pages/<%= section.id + 1 %>">Mais encore... ?</a>
+          <% } else { %>
+            <a class="btn" href="/">Retour à l'accueil</a>
+          <% } %>
         </footer>
       </section>
     </main>

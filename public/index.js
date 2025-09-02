@@ -5,3 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
         t.classList.add("off");
     });
 });
+
+document.querySelectorAll('.toggle').forEach(button => {
+  button.addEventListener('click', () => {
+    const details = button.nextElementSibling;
+    details.classList.toggle('hidden');
+    button.textContent = details.classList.contains('hidden') ? '+' : '−';
+  });
+});
+

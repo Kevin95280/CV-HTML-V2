@@ -401,3 +401,22 @@ ul.interests li {
     line-height: 1.5; /* Espacement entre les lignes */
     color: var(--color-content);
 }
+
+.details {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle {
+  margin-left: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: #007BFF;
+}
