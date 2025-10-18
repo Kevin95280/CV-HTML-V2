@@ -8,8 +8,8 @@
   "start": "npm run build & node index",
   "dev": "npm run build & nodemon index",
   "dev-front": "parcel src/index.html --dist-dir dist",
-  "build": "npm run clear & parcel build src/index.html --dist-dir dist --no-source-maps --no-content-hash",
-  "clear": "rm -rf .parcel-cache"
+  "build": "npm run clear && parcel build src/index.html --dist-dir dist --no-source-maps --no-content-hash",
+  "clear": "rm -rf dist .parcel-cache"
 },
   "keywords": [],
   "author": "",
