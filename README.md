@@ -39,7 +39,7 @@ Une fois les dépendances installées, il suffit de lancer :
 &nbsp;
 
 🔗 Démo en ligne
-👉 [Voir le site en ligne](https://cv-kevin.onrender.com)
+👉 [Voir le site en ligne](https://cv-html-v2.onrender.com)
 
 &nbsp;
 
