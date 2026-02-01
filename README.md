@@ -47,4 +47,4 @@ Une fois les dépendances installées, il suffit de lancer :
 
 &nbsp;
 
-Projet réalisé par Kevin Coelho, dans le cadre d’un projet personnel – 2025
+Projet personnel — Kevin Coelho — 2025
